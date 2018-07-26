@@ -1,5 +1,4 @@
 # EugeneScroll
-GNU General Public License v3.0
 [![repo](https://img.shields.io/badge/github-repo-blue.svg)](https://github.com/EugeneYilia/EugeneScroll)
 ![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green.svg?longCache=true&style=plastic)
 [![greasefork](https://img.shields.io/badge/greasyfork-available-brightgreen.svg)](https://greasyfork.org/zh-CN/scripts/370628-optimize-browser)
