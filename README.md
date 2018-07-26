@@ -4,5 +4,6 @@
 [![greasefork](https://img.shields.io/badge/greasyfork-available-brightgreen.svg)](https://greasyfork.org/zh-CN/scripts/370628-optimize-browser)
 
 ## How to use
-A script when screen is idle will move down screen automatically.
+A script when screen is idle will move down screen automatically.  
+Press F7 to permit/forbid auto-scroll.
 
