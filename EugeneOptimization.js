@@ -12,12 +12,26 @@
     var timeout;
     var speed = 50;
     var EugeneScroll;
+    var stopAutoScroll = false;
+
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 118) {
+            if (stopAutoScroll === false) {
+                stopAutoScroll = true;
+            } else {
+                stopAutoScroll = false;
+            }
+        }
+    };
 
     function ScreenSaver(settings) {
         timeout = settings.timeout;
         document.body.onmousemove = document.body.onmousedown = document.body.onkeydown = document.body.onkeypress = ScreenSaver.prototype.onevent;
         timerID = window.setTimeout(function () {
-            moveDown();
+            if (!stopAutoScroll) {
+                moveDown();
+            }
         }, timeout);
     }
 
@@ -25,7 +39,9 @@
         window.clearTimeout(timerID);
         stopMove();
         timerID = window.setTimeout(function () {
-            moveDown();
+            if (!stopAutoScroll) {
+                moveDown();
+            }
         }, timeout);
     };
 
